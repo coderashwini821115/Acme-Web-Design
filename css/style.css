@@ -1,0 +1,220 @@
+body{
+    font: 15px/1.5 Arial,Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(214, 218, 225);
+}
+.container{
+    /* width: 80%; */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.button1{
+    height: 38px;
+    border: 0;
+    background-color: red;
+    padding: 10px;
+    color: #ffffff;
+}
+.button1:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+.dark{
+    background-color: #35424a;
+}
+header{
+    background-color: #35424a;
+    color: white;
+    min-height: 70px;
+    border-bottom: red 3px solid;
+    margin: 0;
+    padding: 0;
+}
+header #highlight, header .current a{
+    color: red;
+}
+header a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+ ul{
+    margin: 0;
+    padding: 0;
+}
+ li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 0;
+}
+header #branding{
+    float: left;
+    margin: 0 0 0 70px;
+    padding: 5px 0 5px 10px;
+}
+header nav{
+    float: right;
+    margin: 33px 80px 0 0;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase{
+    min-height: 500px;
+    background-image:url("https://marketplace.canva.com/MADGyMQnqAw/4/screen_2x/canva-silver-laptop-computer-beside-white-smartphone-on-brown-wooden-table-MADGyMQnqAw.jpg" ) ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
+#showcase h1{
+    font-size: 55px;
+    margin: 100px 0 50px 0;
+}
+#showcase p{
+    font-size: 20px;
+}
+
+/* Newsletter */
+
+#newsletter{
+    color: #ffffff;
+    background-color: #35424a;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    min-height: 80px;
+}
+#newsletter h1{
+    float: left;
+    margin-left: 10px;
+}
+#newsletter form{
+    /* display: inline; */
+    float: right;
+    margin-top: 20px;
+}
+#newsletter input[type="email"]{
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+}
+#newsletter .button1:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+#boxes{
+    margin-top: 30px;
+}
+#boxes .box{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+#boxes .box img{
+    width: 90px;
+}
+
+/* main */
+#main{
+    margin: 5px 0 0 70px;
+}
+article#main-col{
+    float: left;
+    width: 70%;
+}
+aside#sidebar{
+    width: 20%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: white;
+}
+
+/* Services */
+
+ul.Service li{
+    list-style: none;
+    padding: 20px;
+    border:#cccccc solid 1px;
+    background-color: #e6e5e6;
+    margin-bottom: 2px;
+}
+.inner{
+    padding: 20px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+/* footer */
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: red;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+/* media queries */
+
+@media(max-width: 1224px){
+   header #branding, header nav, header nav li,
+   #showcase, #newsletter h1, #newsletter form, article#main-col,
+    aside#sidebar
+   {
+    float: none;
+    text-align: center;
+    width: 100%;
+    /* padding: 0; */
+    margin: 0;
+   }
+  header nav{
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+  #showcase h1{
+    margin-top: 50px;
+  }
+  #newsletter button{
+    text-align: center;
+    /* display: block; */
+    width: 80%;
+    margin-top: 10px;
+  }
+  #newsletter form input[type="email"]{
+    width: 76%;
+    
+  }
+  #boxes .box {
+    width: 100%;
+    /* float: left; */
+    float: none;
+    text-align: center;
+    padding: 20px;
+}
+article#main-col .Service, 
+    aside#sidebar .dark{
+        margin-right: 30px;
+    }
+    article#main-col .pg-title{
+        margin-right: 45px;
+    }
+    aside#sidebar button{
+        width: 93%;
+    }
+   article#main-col .shift{
+        /* text-align: none; */
+        margin-right: 30px;
+    }
+}
